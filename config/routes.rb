@@ -4,8 +4,11 @@ Rails.application.routes.draw do
   resources :pages
   root 'pages#index'
   get '/pages/', to: 'pages#show'
-  post '/pages/create' => 'pages#create'
-  get '/pages/delete/:id' => 'pages#delete', as: :delete
+  get '/admin/my_models/delete/:id' => 'admin/my_models#delete', as: :delete
+
+  get '/admin/my_models' => 'admin/my_models#index'
+  post '/admin/my_models' => 'admin/my_models#create'
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

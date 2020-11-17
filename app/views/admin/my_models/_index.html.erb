@@ -1,0 +1,24 @@
+<html>
+<body>
+
+
+<%= form_for :data_news do |f| %>
+ Image: <%= f.file_field :image_news %><br />
+ Name: <%= f.text_field :news_name %><br />
+ News: <%= f.text_field :news_desk %><br />
+ <%= f.submit %>
+
+ <% end %>
+
+
+ <tbody>
+ <% @news.each do |f| %>
+   <tr>
+     <tr><%= f.news_desk.first(100) %></tr>
+     <tr><%= image_tag(f.image_news, :width => 300) if f.image_news.attached?  %></tr>
+     <tr><%= link_to "delete", delete_path(f), class: "pages" %></tr>
+   </tr>
+ <% end %>
+</tbody>
+</body>
+</html>
