@@ -7,8 +7,8 @@ ActiveAdmin.register_page "My Models" do
             @news = DataNews.all
         end
         def show
-            @news = DataNews.all
-            redirect_to  admin_my_models_path
+            @news = DataNews.find(params[:id])
+            redirect_to page_show_path
         end
         def create
             @news = DataNews.create!(news_params)
@@ -17,6 +17,14 @@ ActiveAdmin.register_page "My Models" do
         def delete
             @news = DataNews.find(params[:id])
             @news.destroy
+            redirect_to  admin_my_models_path
+        end
+        def edit
+            @news = DataNews.find(params[:id])
+        end
+        def update
+            @news = DataNews.find(params[:id])
+            @news.update(news_params)
             redirect_to  admin_my_models_path
         end
         private

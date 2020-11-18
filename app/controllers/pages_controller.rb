@@ -3,8 +3,10 @@ class PagesController < ApplicationController
         @news = DataNews.all
     end
     def show
-        @news = DataNews.all
-        redirect_to root_path
+        @news = DataNews.find(params[:id])
+        if @news.nil?
+            render action: "index"
+        end
     end
     def login
         redirect_to new_admin_user_session_path

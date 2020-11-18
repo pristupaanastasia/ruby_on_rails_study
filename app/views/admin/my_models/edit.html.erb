@@ -1,0 +1,10 @@
+<html>
+<body>
+<%= form_for @news ,:url => {:controller => :my_models, action: :update}  do |f| %>
+    Image: <%= f.file_field :image_news %><br />
+    Name: <%= f.text_field :news_name %><br />
+    News: <%= f.text_field :news_desk %><br />
+    <%= f.submit "ok"%>
+<% end %>
+</body>
+</html>

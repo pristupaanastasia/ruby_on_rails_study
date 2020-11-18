@@ -1,0 +1,13 @@
+<html>
+<body>
+
+<p><font size="20" color="orange" face="Times New Roman">News</font></p>
+ <tbody>
+   <tr>
+     <tr><%= @news.news_name.first(25) %></tr>
+     <tr><%= @news.news_desk.first(100) %></tr>
+     <tr><%= image_tag(@news.image_news, :width => 300) if @news.image_news.attached? %></tr>
+   </tr>
+</tbody>
+</body>
+</html>
