@@ -1,15 +1,8 @@
 <html>
 <body>
 
-
-#<%= form_for :data_news do |f| %>
- #Image: <%= f.file_field :image_news %><br />
- #News: <%= f.text_field :news_desk %><br />
- #<%= f.submit %>
-
- #<% end %>
-
-
+<p><font size="20" color="orange" face="Times New Roman">News</font></p>
+<%= button_to "login", action: "login" %>
  <tbody>
  <% @news.each do |f| %>
    <tr>

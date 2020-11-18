@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :pages
   root 'pages#index'
   get '/pages/', to: 'pages#show'
+  post '/pages/login', to: 'pages#login'
+
   get '/admin/my_models/delete/:id' => 'admin/my_models#delete', as: :delete
 
   get '/admin/my_models' => 'admin/my_models#index'
