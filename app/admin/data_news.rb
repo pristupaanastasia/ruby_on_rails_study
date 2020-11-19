@@ -5,7 +5,7 @@ ActiveAdmin.register DataNews do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-   permit_params :news_name, :news_desk, :image_news
+   permit_params :news_name, :news_desk, :image_news, :category_id
   #
   # or
   #

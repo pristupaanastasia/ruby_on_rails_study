@@ -1,12 +1,17 @@
 class PagesController < ApplicationController
     def index
         @news = DataNews.all
+        @category = Category.all
     end
     def show
         @news = DataNews.find(params[:id])
         if @news.nil?
             render action: "index"
         end
+    end
+    def catalog
+        @news = DataNews.find(params[:id])
+        render json: @news.to_json
     end
     def login
         redirect_to new_admin_user_session_path

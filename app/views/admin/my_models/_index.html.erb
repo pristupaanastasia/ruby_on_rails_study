@@ -2,10 +2,16 @@
 <body>
 
 
+<%= form_for :categories, :url => category_create_path, :html => {:method => :post}  do |f| %>
+  Name: <%= f.text_field :name_category %><br />
+  <%= f.submit %>
+  <% end %>
+
 <%= form_for :data_news do |f| %>
  Image: <%= f.file_field :image_news %><br />
  Name: <%= f.text_field :news_name %><br />
  News: <%= f.text_field :news_desk %><br />
+ num: <%= f.number_field :category_id %><br />
  <%= f.submit %>
 
  <% end %>

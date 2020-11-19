@@ -19,7 +19,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem "aws-sdk-s3", require: false
 gem 'activeadmin'
-
+gem 'active_model_serializers', '~> 0.10.0'
 # Plus integrations with:
 gem 'devise'
 gem 'cancancan'

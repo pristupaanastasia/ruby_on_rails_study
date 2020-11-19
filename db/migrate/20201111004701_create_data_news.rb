@@ -4,6 +4,7 @@ class CreateDataNews < ActiveRecord::Migration[6.0]
       t.string :news_name
       t.string :news_desk
       t.timestamps
+      t.belongs_to :category
       #t.has_one_attached :image_news
     end
   end

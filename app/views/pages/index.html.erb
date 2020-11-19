@@ -2,6 +2,14 @@
 <body>
 
 <p><font size="20" color="orange" face="Times New Roman">News</font></p>
+<tbody>
+<% @category.each do |f| %>
+  <tr>
+    <tr><%= f.name_category.first(100) %></tr>
+    <tr><%= link_to "show news", page_catalog_path(f) %></tr>
+  </tr>
+<% end %>
+</tbody>
 <%= button_to "login", action: "login" %>
  <tbody>
  <% @news.each do |f| %>
