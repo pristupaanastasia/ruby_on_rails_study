@@ -1,8 +1,13 @@
-class CategoryController < ApplicationController
+module Api
+    module V1
+    end
+end
+class Api::V1::CategoryController < ApplicationController
     def index
     end
     def show
-
+        @news = DataNews.find(params[:id])
+        render json: @news.to_json
     end
     def create
         @category = Category.create!(category_params)
