@@ -28851,3 +28851,423 @@ Processing by Admin::MyModelsController#edit as HTML
 Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 0.7ms | Allocations: 3273)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8057802079028443665)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8057802079028443665)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/my_models" for 127.0.0.1 at 2020-11-19 17:10:10 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::MyModelsController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb
+  [1m[36mDataNews Load (0.5ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news"[0m
+  ↳ app/views/admin/my_models/_index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  Rendered admin/my_models/_index.html.erb (Duration: 63.1ms | Allocations: 29147)
+  Rendered /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb (Duration: 138.5ms | Allocations: 122128)
+Completed 200 OK in 165ms (Views: 129.4ms | ActiveRecord: 15.4ms | Allocations: 131613)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a052d07d42431cd6e34d5987be0ff01f2d23b979/scale_1200.webp" for 127.0.0.1 at 2020-11-19 17:10:10 +0300
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21b3dbd9272afd4bc6d22a084bec5a9035af9cb0/i.webp" for 127.0.0.1 at 2020-11-19 17:10:10 +0300
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c06d9ae2093ae6348e57f956944287db0e41405/i.webp" for 127.0.0.1 at 2020-11-19 17:10:10 +0300
+Processing by ActiveStorage::BlobsController#show as 
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a052d07d42431cd6e34d5987be0ff01f2d23b979", "filename"=>"scale_1200"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.7ms) [0m[34mGenerated URL for file at key: 8sl54yk30b0xthu7yjhrxl7ygrtt (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms | Allocations: 2768)
+
+
+Processing by ActiveStorage::BlobsController#show as 
+Processing by ActiveStorage::BlobsController#show as 
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c06d9ae2093ae6348e57f956944287db0e41405", "filename"=>"i"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21b3dbd9272afd4bc6d22a084bec5a9035af9cb0", "filename"=>"i"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: oin12p6mgbc8dr6jkbdsvmo4rp04 (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms | Allocations: 2022)
+
+
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: faw14thb7o64cbi3uv1pxanh62cu (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp
+Completed 302 Found in 12ms (ActiveRecord: 1.8ms | Allocations: 4348)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp" for 127.0.0.1 at 2020-11-19 17:10:11 +0300
+Processing by ActiveStorage::DiskController#show as 
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:11 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:11 +0300
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"scale_1200.webp\"; filename*=UTF-8''scale_1200.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca", "filename"=>"scale_1200"}
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd", "filename"=>"i"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 2713)
+
+
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 3568)
+
+
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91", "filename"=>"i"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/" for 127.0.0.1 at 2020-11-19 17:10:23 +0300
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pages/index.html.erb:6
+  [1m[36mDataNews Load (0.3ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news"[0m
+  ↳ app/views/pages/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  Rendered pages/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 10320)
+Completed 200 OK in 41ms (Views: 31.1ms | ActiveRecord: 7.4ms | Allocations: 19780)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp" for 127.0.0.1 at 2020-11-19 17:10:23 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:23 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:23 +0300
+Processing by ActiveStorage::DiskController#show as 
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd", "filename"=>"i"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 365)
+
+
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"scale_1200.webp\"; filename*=UTF-8''scale_1200.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca", "filename"=>"scale_1200"}
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 351)
+
+
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 1186)
+
+
+Started GET "/api/v1/category/3" for 127.0.0.1 at 2020-11-19 17:10:25 +0300
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDataNews Load (0.2ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/category_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 4506)
+
+
+Started GET "/api/v1/category/2" for 127.0.0.1 at 2020-11-19 17:10:28 +0300
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDataNews Load (0.4ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/category_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 980)
+
+
+Started GET "/api/v1/category/1" for 127.0.0.1 at 2020-11-19 17:10:31 +0300
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDataNews Load (0.3ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/category_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 988)
+
+
+Started POST "/pages/login" for 127.0.0.1 at 2020-11-19 17:10:34 +0300
+Processing by PagesController#login as HTML
+  Parameters: {"authenticity_token"=>"p4O7W0cxcC85WCAvFeufFBkNfbv9Qlg3780V2lxVzP3mAij+Jxl1anrvnNprIxxyc+eiVEMrZ/Buy+jqv5Q9fw=="}
+Redirected to http://127.0.0.1:3000/admin/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 364)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2020-11-19 17:10:34 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/admin
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2017)
+
+
+Started GET "/admin" for 127.0.0.1 at 2020-11-19 17:10:34 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb
+  Rendered /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb (Duration: 28.5ms | Allocations: 45860)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.4ms | Allocations: 47972)
+
+
+Started GET "/admin/my_models" for 127.0.0.1 at 2020-11-19 17:10:36 +0300
+Processing by Admin::MyModelsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb
+  [1m[36mDataNews Load (0.4ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news"[0m
+  ↳ app/views/admin/my_models/_index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  Rendered admin/my_models/_index.html.erb (Duration: 18.7ms | Allocations: 8433)
+  Rendered /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb (Duration: 52.0ms | Allocations: 54313)
+Completed 200 OK in 56ms (Views: 50.5ms | ActiveRecord: 2.4ms | Allocations: 56301)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a052d07d42431cd6e34d5987be0ff01f2d23b979/scale_1200.webp" for 127.0.0.1 at 2020-11-19 17:10:36 +0300
+Processing by ActiveStorage::BlobsController#show as 
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a052d07d42431cd6e34d5987be0ff01f2d23b979", "filename"=>"scale_1200"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 8sl54yk30b0xthu7yjhrxl7ygrtt (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNTozNi40MzBaIiwicHVyIjoiYmxvYl9rZXkifX0=--ef4c68a3b74e3a981277818008a5f3e9b2182911/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNTozNi40MzBaIiwicHVyIjoiYmxvYl9rZXkifX0=--ef4c68a3b74e3a981277818008a5f3e9b2182911/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1818)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp" for 127.0.0.1 at 2020-11-19 17:10:36 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:36 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"scale_1200.webp\"; filename*=UTF-8''scale_1200.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca", "filename"=>"scale_1200"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 337)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:36 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started POST "/api/v1/category" for 127.0.0.1 at 2020-11-19 17:10:47 +0300
+Processing by Api::V1::CategoryController#create as HTML
+  Parameters: {"authenticity_token"=>"E+ax8CGh7/nGzXGHTjAh4B+PXyEzFmFjlng8THNRan8v4KTKoGneYeQWoGTDZUibw2nKZq3Rj398xxk8p4JT8g==", "categories"=>{"name_category"=>"собака"}, "commit"=>"Save Categories"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/category_controller.rb:13:in `create'
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("name_category", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name_category", "собака"], ["created_at", "2020-11-19 14:10:47.827394"], ["updated_at", "2020-11-19 14:10:47.827394"]]
+  ↳ app/controllers/api/v1/category_controller.rb:13:in `create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/category_controller.rb:13:in `create'
+Redirected to http://127.0.0.1:3000/admin/my_models
+Completed 302 Found in 10ms (ActiveRecord: 2.2ms | Allocations: 2989)
+
+
+Started GET "/admin/my_models" for 127.0.0.1 at 2020-11-19 17:10:47 +0300
+Processing by Admin::MyModelsController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb
+  [1m[36mDataNews Load (0.6ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news"[0m
+  ↳ app/views/admin/my_models/_index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  Rendered admin/my_models/_index.html.erb (Duration: 20.1ms | Allocations: 8422)
+  Rendered /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb (Duration: 49.4ms | Allocations: 54233)
+Completed 200 OK in 54ms (Views: 47.2ms | ActiveRecord: 3.1ms | Allocations: 56245)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp" for 127.0.0.1 at 2020-11-19 17:10:47 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"scale_1200.webp\"; filename*=UTF-8''scale_1200.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca", "filename"=>"scale_1200"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:47 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:47 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started GET "/" for 127.0.0.1 at 2020-11-19 17:10:52 +0300
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pages/index.html.erb:6
+  [1m[36mDataNews Load (0.4ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news"[0m
+  ↳ app/views/pages/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  Rendered pages/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 7947)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 2.3ms | Allocations: 15275)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp" for 127.0.0.1 at 2020-11-19 17:10:52 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:52 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Processing by ActiveStorage::DiskController#show as 
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:10:52 +0300
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"scale_1200.webp\"; filename*=UTF-8''scale_1200.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca", "filename"=>"scale_1200"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Started GET "/api/v1/category/4" for 127.0.0.1 at 2020-11-19 17:10:54 +0300
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDataNews Load (0.4ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/category_controller.rb:9:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1168)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find DataNews with 'id'=4):
+  
+app/controllers/api/v1/category_controller.rb:9:in `show'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8057802079028443665)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8057802079028443665)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/category/4" for 127.0.0.1 at 2020-11-19 17:12:03 +0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDataNews Load (0.3ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/category_controller.rb:9:in `show'
+Completed 404 Not Found in 15ms (ActiveRecord: 5.2ms | Allocations: 2173)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find DataNews with 'id'=4):
+  
+app/controllers/api/v1/category_controller.rb:9:in `show'
+Started GET "/" for 127.0.0.1 at 2020-11-19 17:12:08 +0300
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pages/index.html.erb:6
+  [1m[36mDataNews Load (0.4ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news"[0m
+  ↳ app/views/pages/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  Rendered pages/index.html.erb within layouts/application (Duration: 72.3ms | Allocations: 29447)
+Completed 200 OK in 127ms (Views: 109.7ms | ActiveRecord: 13.2ms | Allocations: 84366)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp" for 127.0.0.1 at 2020-11-19 17:12:08 +0300
+Processing by ActiveStorage::DiskController#show as 
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:12:08 +0300
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 17:12:08 +0300
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"scale_1200.webp\"; filename*=UTF-8''scale_1200.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--76a877b4ae543d0e3972f4cfdcb70a2d9ac86fca", "filename"=>"scale_1200"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 481)
+
+
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMS4wMDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--60dc8970ab876f304d8e9450627a9d6ece962e91", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 356)
+
+
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxNDoxNToxMC45OTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--804993b83d57aae00bacc386043c5f7ffb6055bd", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 356)
+
+
+Started GET "/api/v1/category/4" for 127.0.0.1 at 2020-11-19 17:12:10 +0300
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDataNews Load (0.4ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/category_controller.rb:9:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.9ms | Allocations: 1271)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find DataNews with 'id'=4):
+  
+app/controllers/api/v1/category_controller.rb:9:in `show'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8057802079028443665)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8057802079028443665)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/category/4" for 127.0.0.1 at 2020-11-19 17:13:59 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDataNews Load (0.3ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/category_controller.rb:10:in `show'
+Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 2.1ms | Allocations: 5293)
+
+
+Started GET "/api/v1/category/4" for 127.0.0.1 at 2020-11-19 17:14:02 +0300
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDataNews Load (0.4ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/api/v1/category_controller.rb:10:in `show'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1030)
+
+
+Started GET "/api/v1/category/3" for 127.0.0.1 at 2020-11-19 17:14:05 +0300
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDataNews Load (0.4ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/api/v1/category_controller.rb:10:in `show'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 3.4ms | Allocations: 3751)
+
+

@@ -6,7 +6,7 @@ class Api::V1::CategoryController < ApplicationController
     def index
     end
     def show
-        @news = DataNews.find(params[:id])
+        @news = DataNews.where(id: params[:id])
         render json: @news.to_json
     end
     def create
