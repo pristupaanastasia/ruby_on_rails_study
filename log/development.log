@@ -28343,3 +28343,511 @@ Processing by Api::V1::CategoryController#show as HTML
 Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 981)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8057802079028443665)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8057802079028443665)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-11-19 16:03:14 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant PagesController
+Did you mean?  DeviseController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8057802079028443665)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8057802079028443665)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8057802079028443665)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8057802079028443665)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-11-19 16:04:36 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PagesController#index as HTML
+Completed 406 Not Acceptable in 10ms (ActiveRecord: 0.0ms | Allocations: 4372)
+
+
+  
+ActionController::MissingExactTemplate (Api::V1::PagesController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8057802079028443665)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8057802079028443665)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-11-19 16:06:57 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PagesController#index as HTML
+Completed 406 Not Acceptable in 11ms (ActiveRecord: 0.0ms | Allocations: 4372)
+
+
+  
+ActionController::MissingExactTemplate (Api::V1::PagesController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-11-19 16:06:58 +0300
+Processing by Api::V1::PagesController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 788)
+
+
+  
+ActionController::MissingExactTemplate (Api::V1::PagesController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.4) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.4) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8057802079028443665)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8057802079028443665)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-11-19 16:10:52 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/pages/index.html.erb:6
+  [1m[36mDataNews Load (0.5ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news"[0m
+  ↳ app/views/pages/index.html.erb:16
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:20
+  Rendered pages/index.html.erb within layouts/application (Duration: 76.9ms | Allocations: 30215)
+Completed 200 OK in 140ms (Views: 114.9ms | ActiveRecord: 17.0ms | Allocations: 85780)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a052d07d42431cd6e34d5987be0ff01f2d23b979/scale_1200.webp" for 127.0.0.1 at 2020-11-19 16:10:53 +0300
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c06d9ae2093ae6348e57f956944287db0e41405/i.webp" for 127.0.0.1 at 2020-11-19 16:10:53 +0300
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21b3dbd9272afd4bc6d22a084bec5a9035af9cb0/i.webp" for 127.0.0.1 at 2020-11-19 16:10:53 +0300
+Processing by ActiveStorage::BlobsController#show as 
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c06d9ae2093ae6348e57f956944287db0e41405", "filename"=>"i"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: faw14thb7o64cbi3uv1pxanh62cu (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--af71648c6e45a6bc71b111d1cf8bdd8b545d6201/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--af71648c6e45a6bc71b111d1cf8bdd8b545d6201/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms | Allocations: 2452)
+
+
+Processing by ActiveStorage::BlobsController#show as 
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a052d07d42431cd6e34d5987be0ff01f2d23b979", "filename"=>"scale_1200"}
+Processing by ActiveStorage::BlobsController#show as 
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21b3dbd9272afd4bc6d22a084bec5a9035af9cb0", "filename"=>"i"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--af71648c6e45a6bc71b111d1cf8bdd8b545d6201/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 16:10:53 +0300
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: oin12p6mgbc8dr6jkbdsvmo4rp04 (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--60b2410b2590178cef50585df4a26ce680dd3906/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp)[0m
+Processing by ActiveStorage::DiskController#show as 
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 8sl54yk30b0xthu7yjhrxl7ygrtt (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMzdaIiwicHVyIjoiYmxvYl9rZXkifX0=--6506390a0e53cd3b686f43a307f944c6791be554/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--60b2410b2590178cef50585df4a26ce680dd3906/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--af71648c6e45a6bc71b111d1cf8bdd8b545d6201", "filename"=>"i"}
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMzdaIiwicHVyIjoiYmxvYl9rZXkifX0=--6506390a0e53cd3b686f43a307f944c6791be554/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp
+Completed 302 Found in 19ms (ActiveRecord: 0.6ms | Allocations: 6527)
+
+
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 2804)
+
+
+Completed 302 Found in 22ms (ActiveRecord: 1.6ms | Allocations: 9677)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--60b2410b2590178cef50585df4a26ce680dd3906/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 16:10:53 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--60b2410b2590178cef50585df4a26ce680dd3906", "filename"=>"i"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMzdaIiwicHVyIjoiYmxvYl9rZXkifX0=--6506390a0e53cd3b686f43a307f944c6791be554/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp" for 127.0.0.1 at 2020-11-19 16:10:53 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"scale_1200.webp\"; filename*=UTF-8''scale_1200.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMzdaIiwicHVyIjoiYmxvYl9rZXkifX0=--6506390a0e53cd3b686f43a307f944c6791be554", "filename"=>"scale_1200"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/api/v1/category/1" for 127.0.0.1 at 2020-11-19 16:10:55 +0300
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDataNews Load (0.3ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/category_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 4529)
+
+
+Started GET "/api/v1/category/3" for 127.0.0.1 at 2020-11-19 16:10:57 +0300
+Processing by Api::V1::CategoryController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDataNews Load (0.5ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/category_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 992)
+
+
+Started POST "/pages/login" for 127.0.0.1 at 2020-11-19 16:11:03 +0300
+Processing by PagesController#login as HTML
+  Parameters: {"authenticity_token"=>"G4K/555c2D1l8XoqmGT/9R06ZTyTcmYGU8P7pY4cKB1aAyxC/nTdeCZGxt/mrHyTd9C60y0bWcHSxQaVbd3Znw=="}
+Redirected to http://127.0.0.1:3000/admin/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 354)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2020-11-19 16:11:03 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/admin
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 3.7ms | Allocations: 6476)
+
+
+Started GET "/admin" for 127.0.0.1 at 2020-11-19 16:11:03 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb
+  Rendered /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb (Duration: 41.8ms | Allocations: 47474)
+Completed 200 OK in 47ms (Views: 43.2ms | ActiveRecord: 0.3ms | Allocations: 50428)
+
+
+Started GET "/admin/my_models" for 127.0.0.1 at 2020-11-19 16:11:04 +0300
+Processing by Admin::MyModelsController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb
+  [1m[36mDataNews Load (0.3ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news"[0m
+  ↳ app/views/admin/my_models/_index.html.erb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "DataNews"], ["name", "image_news"], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admin/my_models/_index.html.erb:25
+  Rendered admin/my_models/_index.html.erb (Duration: 17.8ms | Allocations: 9144)
+  Rendered /var/lib/gems/2.7.0/gems/activeadmin-2.8.1/app/views/active_admin/page/index.html.arb (Duration: 44.3ms | Allocations: 55053)
+Completed 200 OK in 50ms (Views: 43.2ms | ActiveRecord: 2.3ms | Allocations: 57747)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21b3dbd9272afd4bc6d22a084bec5a9035af9cb0/i.webp" for 127.0.0.1 at 2020-11-19 16:11:04 +0300
+Processing by ActiveStorage::BlobsController#show as 
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21b3dbd9272afd4bc6d22a084bec5a9035af9cb0", "filename"=>"i"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: oin12p6mgbc8dr6jkbdsvmo4rp04 (http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNjowNC41MzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--bed9ef86375f6962e016b887fcefbe641d765b0b/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp)[0m
+Redirected to http://127.0.0.1:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNjowNC41MzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--bed9ef86375f6962e016b887fcefbe641d765b0b/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1828)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMzdaIiwicHVyIjoiYmxvYl9rZXkifX0=--6506390a0e53cd3b686f43a307f944c6791be554/scale_1200.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22scale_1200.webp%22%3B+filename%2A%3DUTF-8%27%27scale_1200.webp" for 127.0.0.1 at 2020-11-19 16:11:04 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"scale_1200.webp\"; filename*=UTF-8''scale_1200.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhPSE5zTlRSNWF6TXdZakI0ZEdoMU4zbHFhSEo0YkRkNVozSjBkQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnpZMkZzWlY4eE1qQXdMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkozTmpZV3hsWHpFeU1EQXVkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMzdaIiwicHVyIjoiYmxvYl9rZXkifX0=--6506390a0e53cd3b686f43a307f944c6791be554", "filename"=>"scale_1200"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 362)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--60b2410b2590178cef50585df4a26ce680dd3906/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 16:11:04 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhiMmx1TVRKd05tMW5ZbU00WkhJMmFtdGlaSE4yYlc4MGNuQXdOQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMjRaIiwicHVyIjoiYmxvYl9rZXkifX0=--60b2410b2590178cef50585df4a26ce680dd3906", "filename"=>"i"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 360)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--af71648c6e45a6bc71b111d1cf8bdd8b545d6201/i.webp?content_type=image%2Fwebp&disposition=attachment%3B+filename%3D%22i.webp%22%3B+filename%2A%3DUTF-8%27%27i.webp" for 127.0.0.1 at 2020-11-19 16:11:04 +0300
+Processing by ActiveStorage::DiskController#show as 
+  Parameters: {"content_type"=>"image/webp", "disposition"=>"attachment; filename=\"i.webp\"; filename*=UTF-8''i.webp", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhabUYzTVRSMGFHSTNielkwWTJKcE0zVjJNWEI0WVc1b05qSmpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpTzJGMGRHRmphRzFsYm5RN0lHWnBiR1Z1WVcxbFBTSnBMbmRsWW5BaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkoya3VkMlZpY0FZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDNkbFluQUdPd1pVIiwiZXhwIjoiMjAyMC0xMS0xOVQxMzoxNTo1My4yMDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--af71648c6e45a6bc71b111d1cf8bdd8b545d6201", "filename"=>"i"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/admin/my_models/edit/1" for 127.0.0.1 at 2020-11-19 16:11:12 +0300
+Processing by Admin::MyModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = $1 ORDER BY "admin_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDataNews Load (0.3ms)[0m  [1m[34mSELECT "data_news".* FROM "data_news" WHERE "data_news"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/admin/my_models.rb:23:in `edit'
+  Rendering admin/my_models/edit.html.erb
+  Rendered admin/my_models/edit.html.erb (Duration: 1.3ms | Allocations: 643)
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 0.7ms | Allocations: 3273)
+
+

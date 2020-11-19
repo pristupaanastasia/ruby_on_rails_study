@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   resources :my_models
   resources :category
   root 'pages#index'
-  get '/pages/:id', to: 'pages#show', as: 'page_show'
-  post '/pages/login', to: 'pages#login'
+  get 'pages/:id', to: 'pages#show', as: 'page_show'
+  post 'pages/login', to: 'pages#login'
   get '/api/v1/category/:id', to: 'api/v1/category#show', as: 'page_catalog'
 
   get '/admin/my_models/delete/:id' => 'admin/my_models#delete', as: :delete
