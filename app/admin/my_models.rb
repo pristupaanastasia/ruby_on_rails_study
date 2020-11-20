@@ -4,7 +4,7 @@ ActiveAdmin.register_page "My Models" do
     end
     controller do
         def index
-            @news = DataNews.all
+            @news = DataNews.order(created_at: :desc)
         end
         def show
             @news = DataNews.find(params[:id])
@@ -29,7 +29,7 @@ ActiveAdmin.register_page "My Models" do
         end
         private
         def news_params
-            params.require(:data_news).permit(:news_name,:news_desk, :image_news)
+            params.require(:data_news).permit(:news_name,:news_desk, :image_news,:category_id, :created_at)
         end
         def new 
         end

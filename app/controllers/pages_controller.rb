@@ -1,7 +1,7 @@
 
 class PagesController < ApplicationController
     def index
-        @news = DataNews.all
+        @news = DataNews.order(created_at: :desc)
         @category = Category.all
     end
     def show
@@ -12,7 +12,7 @@ class PagesController < ApplicationController
     end
     private
     def news_params
-        params.require(:data_news).permit(:news_name,:news_desk, :image_news, :category_id)
+        params.require(:data_news).permit(:news_name,:news_desk, :image_news, :category_id, :created_at)
     end
     def new 
     end
