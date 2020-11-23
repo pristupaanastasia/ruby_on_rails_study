@@ -1,0 +1,18 @@
+<html>
+<body>
+<%= form_for @user ,:url =>  update_profiles_path(@user)  do |f| %>
+  News: <%= f.number_field  :categories  %><br />
+  <%= f.submit "ok"%>
+<% end %>
+<tbody>
+ <% @news.each do |f| %>
+   <tr>
+     <tr><%= f.news_name.first(25) %></tr>
+     <tr><%= f.news_desk.first(100) %></tr>
+     <tr><%= image_tag(f.image_news, :width => 300) if f.image_news.attached? %></tr>
+     <tr><%= link_to "show", page_show_path(f) %></tr>
+   </tr>
+ <% end %>
+</tbody>
+</body>
+</html>

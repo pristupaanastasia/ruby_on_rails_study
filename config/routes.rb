@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, path: 'users'
   devise_for :admin_users, ActiveAdmin::Devise.config
   namespace :api do
     namespace :v1 do
@@ -8,8 +9,10 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   resources :pages
   resources :my_models
-  resources :category
+  resources :profiles
   root 'pages#index'
+
+  put 'profiles/:id', to: 'profiles#update', as: 'update_profiles' 
   get 'pages/:id', to: 'pages#show', as: 'page_show'
   post 'pages/login', to: 'pages#login'
   get '/api/v1/category/:id', to: 'api/v1/category#show', as: 'page_catalog'

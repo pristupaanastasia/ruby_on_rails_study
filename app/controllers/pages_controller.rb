@@ -1,5 +1,6 @@
 
 class PagesController < ApplicationController
+    
     def index
         @news = DataNews.order(created_at: :desc)
         @category = Category.all
@@ -8,7 +9,7 @@ class PagesController < ApplicationController
         @news = DataNews.find(params[:id])
     end
     def login
-        redirect_to new_admin_user_session_path
+        redirect_to new_user_session_path
     end
     private
     def news_params
